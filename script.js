@@ -33,12 +33,12 @@ cards.forEach((card, index) => {
 
             if (index === safeIndex) {
 
-                alert("🎉 You found the safe card!");
+                retryScreen.classList.add("show");
 
 
             } else {
 
-                window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+                window.location.href = "looser.html";
 
             }
 
@@ -46,4 +46,11 @@ cards.forEach((card, index) => {
 
     });
 
+});
+
+const retryScreen = document.getElementById("retryScreen");
+const retryBtn = document.getElementById("retryBtn");
+
+retryBtn.addEventListener("click", () => {
+    location.reload();
 });

@@ -73,6 +73,17 @@ body {
     transform: rotateY(180deg);
 }
 
+
+.card {
+    cursor: pointer;
+    transition: transform .25s ease, filter .25s ease;
+}
+
+.card:hover {
+    transform: translateY(-12px) rotate(-2deg) scale(1.06);
+    filter: drop-shadow(0 10px 20px rgba(255, 255, 0, 0.5));
+}
+
 .front,
 .back {
     position: absolute;
@@ -91,4 +102,49 @@ body {
 .back {
     background-image: url("assets/card.png");
     transform: rotateY(180deg);
+}
+
+#retryScreen {
+    position: fixed;
+    inset: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background: rgba(0, 0, 0, .6);
+
+    z-index: 100;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+
+#retryScreen.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.retry-box {
+    width: 450px;
+}
+
+.retry-btn {
+    width: 180px;
+    margin-top: -90px;
+    /* Move button onto the box */
+
+    cursor: pointer;
+
+    transition: transform .2s ease;
+}
+
+.retry-btn:hover {
+    transform: scale(1.1);
+}
+
+.retry-btn:active {
+    transform: scale(.95);
 }
