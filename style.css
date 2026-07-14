@@ -50,6 +50,14 @@ body {
     width: 230px;
     height: 220px;
     perspective: 1000px;
+    clip-path: polygon(8% 2%,
+            100% 0%,
+            100% 45%,
+            93% 76%,
+            85% 100%,
+            25% 97%,
+            6% 75%,
+            0% 42%);
 }
 
 .card-inner {
