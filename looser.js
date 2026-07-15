@@ -56,3 +56,15 @@ function typeWriter(){
 }
 
 typeWriter();
+const fakeRetry = document.querySelector(".retry_fake");
+
+fakeRetry.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    alert("Your luck is shit.\nAura -999 💀");
+
+    window.open(
+        "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "_blank"
+    );
+});
