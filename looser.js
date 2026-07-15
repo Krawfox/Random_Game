@@ -21,7 +21,7 @@ an eleven percent chance.
 You preferred
 the other eighty-nine.
 Remarkable.
-Refresh the page.
+Click the Retry.
 Perhaps statistics
 will forgive you.
 `;
