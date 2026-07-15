@@ -1,4 +1,3 @@
-
 const poem = `
 One card carried hope.
 Eight carried defeat.
@@ -29,34 +28,37 @@ will forgive you.
 const speed = 20;
 
 const text = document.getElementById("text");
-const retry = document.getElementById("retry");
+const retry = document.querySelector(".retry");
+const fakeRetry = document.querySelector(".retry_fake");
+const buttons = document.querySelector(".buttons");
 
 let i = 0;
 
-function typeWriter(){
-
-    if(i < poem.length){
-
+function typeWriter() {
+    if (i < poem.length) {
         text.innerHTML =
-            poem.substring(0,i) +
+            poem.substring(0, i) +
             '<span class="cursor">|</span>';
 
         i++;
-
-        setTimeout(typeWriter,speed);
-
-    }else{
-
+        setTimeout(typeWriter, speed);
+    } else {
         text.innerHTML = poem;
 
-        retry.style.display="inline-block";
-
+        retry.style.display = "inline-block";
+        fakeRetry.style.display = "inline-block";
     }
-
 }
 
 typeWriter();
-const fakeRetry = document.querySelector(".retry_fake");
+
+
+if (Math.random() < 0.5) {
+    buttons.appendChild(fakeRetry);
+    buttons.appendChild(retry);
+}
+
+
 
 fakeRetry.addEventListener("click", (e) => {
     e.preventDefault();
