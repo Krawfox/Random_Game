@@ -18,6 +18,10 @@ The objective of this game is to click and select the correct card and if you se
 It allows you to click one of 9 cards and has a winning rate of 11% and 89% chance to lose so I hope you loose .
 
 # Some screenshots 
+<img width="1915" height="946" alt="image" src="https://github.com/user-attachments/assets/dea112db-8697-419d-ad18-003de215a6cb" />
+<img width="1919" height="944" alt="image" src="https://github.com/user-attachments/assets/1b57dec2-ecbf-44ee-9087-fea545931933" />
+
+
 
 # Author 
  GLory to Krawfox 
