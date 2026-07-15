@@ -1,7 +1,7 @@
 const cards = document.querySelectorAll(".card");
 const safeIndex = Math.floor(Math.random() * cards.length);
 
-console.log("Safe card:", safeIndex);
+
 
 let gameOver = false;
 
